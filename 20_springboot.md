@@ -16,4 +16,9 @@
 - 外部サービス前提にすると、フライト中とかコーディングできないね。( === 互換コンテナを作成してネットワークから切れた状態でもテスト可能にしておく )
 
 ## 出来上がったもの
-[https://github.com/nebosuke/springboot-echo-server]
+https://github.com/nebosuke/springboot-echo-server POSTしたメッセージを単に返してくれるサービス
+
+## 生成した手順
+
+1. SpringInitializer を利用してアプリの雛形を作成する
+- https://start.spring.io を使うか、Eclipse + STS で初期プロジェクトを作成
