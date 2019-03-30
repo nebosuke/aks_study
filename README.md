@@ -11,7 +11,7 @@
 1. AKS へデプロイ
     - [AKSクラスタの作成](30_setup_aks.md)
     - [コンテナレジストリを構築してAKSからアクセス可能にする](31_setup_container_registry.md)
-    - SpringBoot で作成したコンテナをコンテナレジストリに登録
+    - [SpringBoot で作成したコンテナをコンテナレジストリに登録](32_push_image_to_acr.md)
     - AKSでクラスタを作成
     - デプロイ
 1. Kustomize による staging / production の切り替え
