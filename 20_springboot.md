@@ -99,7 +99,8 @@ index 17fc7c0..6a45563 100644
 1. REST API のエンドポイントを作成する (この例では全然RESTではないですけど)
 - https://github.com/nebosuke/springboot-echo-server/blob/master/src/main/java/study/hiroshima/echo/EchoController.java
 
-1. SpringBootアプリケーションのデフォルト設定を application.yml にセット
+1. SpringBootアプリケーションのデフォルト設定を src/resource/application.yml にセット
+- k8s環境に住んでいると yaml の方がコンテキストスイッチがすくないので yaml にしておく (propertiesでも全然OK)
 ```yaml
 server:
   port: 8080
@@ -124,4 +125,9 @@ spring:
 1. ビルド
 ```
 $ ./mvnw install
+```
+
+1. 実行
+```
+$ java -jar target/
 ```
