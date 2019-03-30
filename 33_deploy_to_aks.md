@@ -16,3 +16,17 @@ az network public-ip create --resource-group {ノードが属するリソース�
 ```
 
 結果はJSONで表示されるので、IPアドレスをコピーして、loadBalancerIP にセットする。
+
+## サービスをコンテナにデプロイする
+
+staging 環境の場合
+```
+$ kustomize build overlays/development | kubectl apply -f -
+```
+
+## サービスのスケーリング
+各マイクロサービスはオートスケールの設定がされているため、30秒ごとにCPU利用率などを参照してポッドの数を増減させる。
+
+手動にてポッドの数を変更するときは以下のようにする。
+```
+kubectl scale --replicas=5 deployment/echo-service
