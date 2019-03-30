@@ -1,4 +1,4 @@
-# SpringBoot と Kubernetes
+# SpringBootでマイクロサービスを作ってKubernetesにデプロイしてみる【実践編】
 
 ## Agenda
 1. Docker / Kubernetes 概要

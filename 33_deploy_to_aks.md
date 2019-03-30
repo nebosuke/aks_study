@@ -1,6 +1,5 @@
 # コンテナをKubernetesにデプロイする
-
-## イミュータブルな設定
+- https://github.com/nebosuke/aks_study_deployment
 
 ## AKSでサービスに静的IPを設定する方法
 - 事前にAKSのノードが属するリソースグループに静的IPを定義しておき
