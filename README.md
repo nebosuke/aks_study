@@ -7,9 +7,10 @@
     - Kubernetes用語解説
 1. SpringBoot でマイクロサービスのコンテナを作成
     - [SpringBoot でシンプルなマイクロサービスを作成し](20_springboot.md)
-    - [それをコンテナにビルド](21_springcontainer.md)
-    - 設定の外部化
+    - [設定を外部化しコンテナにビルド](21_springcontainer.md)
 1. AKS へデプロイ
+    - [AKSクラスタの作成](30_setup_aks.md)
+    - [コンテナレジストリを構築してAKSからアクセス可能にする](31_setup_container_registry.md)
     - SpringBoot で作成したコンテナをコンテナレジストリに登録
     - AKSでクラスタを作成
     - デプロイ
