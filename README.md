@@ -9,14 +9,10 @@
     - [SpringBoot でシンプルなマイクロサービスを作成し](20_springboot.md)
     - [設定を外部化しコンテナにビルド](21_springcontainer.md)
 1. AKS へデプロイ
-    - [AKSクラスタの作成](30_setup_aks.md)
     - [コンテナレジストリを構築してAKSからアクセス可能にする](31_setup_container_registry.md)
+    - [AKSクラスタの作成](30_setup_aks.md)
     - [SpringBoot で作成したコンテナをコンテナレジストリに登録](32_push_image_to_acr.md)
-    - AKSでクラスタを作成
-    - デプロイ
-1. Kustomize による staging / production の切り替え
-    - Kustomizeが必要な背景
-    - ImmutableなConfig
+    - [デプロイ](33_deploy_to_aks.md)
 1. ELK stack によるロギング (optional)
     - fluentd コンテナを DaemonSet としてデプロイ
     - ELK stack でログを分析
