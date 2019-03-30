@@ -124,10 +124,10 @@ spring:
 
 1. ビルド
 ```
-$ ./mvnw install
+./mvnw install
 ```
 
 1. 実行
 ```
-$ java -jar target/
+java -jar target/
 ```

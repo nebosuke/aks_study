@@ -6,8 +6,8 @@
     - Kubernetesが解決する課題
     - Kubernetes用語解説
 1. SpringBoot でマイクロサービスのコンテナを作成
-    - SpringBoot でシンプルなマイクロサービスを作成し ([20_springboot.md])
-    - それをコンテナにビルド
+    - [SpringBoot でシンプルなマイクロサービスを作成し](20_springboot.md)
+    - [それをコンテナにビルド](21_springcontainer.md)
     - 設定の外部化
 1. AKS へデプロイ
     - SpringBoot で作成したコンテナをコンテナレジストリに登録
