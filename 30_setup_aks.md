@@ -42,7 +42,7 @@ az group show --name {リソースグループ名}
 ## kubectl の接続先を設定する
 azコマンドを利用してAKSに接続可能な認証情報を ```~/.kube/config``` に書き込む
 ```
-az aks get-credentials --resource-group {リソースグループ名} --name {AKSクラスタ名}
+az aks get-credentials --resource-group rg-study --name {AKSクラスタ名}
 ```
 
 ## 接続できたことを確認する

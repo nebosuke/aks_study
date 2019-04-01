@@ -16,7 +16,7 @@ curl -s https://api.github.com/repos/kubernetes-sigs/kustomize/releases/latest |
   xargs curl -O -L
 mv kustomize_*_${opsys}_amd64 kustomize
 chmod u+x kustomize
-mv kustomize /usr/local
+mv kustomize /usr/local/bin
 ```
 
 ## Mac
