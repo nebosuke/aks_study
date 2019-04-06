@@ -1,18 +1,18 @@
-# AKSクラスタの作成
+# AKSクラスタの作成 (事前に実施済みです)
 
-![Kubernetes クラスターを作成](assets/setupaks_1.png)
+![Kubernetes クラスターを作成](assets/setup_aks_1.png)
 
 ## Azule CLI (az) のインストール
 
 ### CentOS7の場合
 ```
-rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 ```
 ```
-sh -c 'echo -e "[azure-cli]\nname=Azure CLI\nbaseurl=https://packages.microsoft.com/yumrepos/azure-cli\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/azure-cli.repo'
+udo ssh -c 'echo -e "[azure-cli]\nname=Azure CLI\nbaseurl=https://packages.microsoft.com/yumrepos/azure-cli\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/azure-cli.repo'
 ```
 ```
-yum install azure-cli
+sudo yum install azure-cli
 ```
 ```
 az login
