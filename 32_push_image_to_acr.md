@@ -18,8 +18,7 @@ if [ "x$TAG" = "x" ]; then
     TAG=latest
 fi
 
-echo $ACR_PASSWORD | docker login $ACR_HOST -u "$ACR_USER" --password-stdin
-echo $ACR_HOST
+docker login $ACR_HOST -u "$ACR_USER" -p "$ACR_PASSWORD"
 docker tag echo-service "${ACR_HOST}/echo-service:${TAG}"
 docker push "${ACR_HOST}/echo-service:${TAG}"
 ```
